@@ -38,5 +38,7 @@ ORACLE常用的日期类型，它与Date的区别是不仅可以保存日期和�
 
 第三种：在代码中使用java.sql.Timestamp（精确到微秒）
 
+**（2）Oracle字段类型为Timestamp**
 
+（预留）
 
