@@ -1,4 +1,4 @@
-# 浅谈Java与Oracle的日期、时间类型
+# Java与Oracle的日期、时间类型
 
 ### 1、参考资料
 
