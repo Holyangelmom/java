@@ -30,13 +30,15 @@ this代表着当前对象的引用或者当前对象的地址。this和super的�
 
 ##### （3）this最容易混淆的地方
 
+```java
 public class A {
-
-	public void test\(\) {
-
-		System.out.println\(this.getClass\(\).getName\(\)\);
-
+	public void test() {
+		System.out.println(this.getClass().getName());
 	}
+}
+```
+
+public class B extends A{
 
 }
 
