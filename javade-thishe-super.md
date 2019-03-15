@@ -4,7 +4,7 @@
 
 ##### （1）super的意义
 
-super关键字表示对某个类的父类的引用，通常用来访问父类的方法、变量、构造方法（private类型的除外）。
+super关键字表示对某个类的父类的引用，通常用来访问父类的方法、变量、构造方法（private类型的除外）。另外super不可以在static环境中使用，包括：static变量,static方法，static语句。
 
 ##### （2）super的用法
 
@@ -18,7 +18,7 @@ super关键字表示对某个类的父类的引用，通常用来访问父类的
 
 ##### （1）this的意义
 
-this代表着当前对象的引用或者当前对象的地址。this和super的用法大致相同，但this的含义比较复杂。
+this代表着当前对象的引用或者当前对象的地址。this和super的用法大致相同，但this的含义比较复杂。另外this不可以在static环境中使用，包括：static变量,static方法，static语句。
 
 ##### （2）this的用法
 
