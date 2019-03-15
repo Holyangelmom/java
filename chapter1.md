@@ -34,7 +34,7 @@ ORACLE常用的日期类型，它与Date的区别是不仅可以保存日期和�
 
 第一种：利用Oracle中的方法to\_date\(\)， 在sql语句中使用to\_date\(\)方法。
 
-第二种：在代码中使用java.sql.Date（但只能精确到年月日）
+第二种：在代码中使用java.sql.Date（但只能精确到年月日）。为什么不用java.util.Date？因为java.util.Date 就是在除了SQL语句的情况下面使用,java.sql.Date 是针对SQL语句使用的
 
 第三种：在代码中使用java.sql.Timestamp（精确到微秒）
 
