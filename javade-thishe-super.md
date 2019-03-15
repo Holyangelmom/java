@@ -10,7 +10,7 @@ super关键字表示对某个类的父类的引用，通常用来访问父类的
 
 ① 访问父类变量：super.count
 
-② 访问父类方法：super.print\(\);
+② 访问父类方法：super.print\(\)
 
-③ 访问父类构造方法：super\(\)或者super\(...\);
+③ 访问父类构造方法：super\(\)或者super\(...\)
 
