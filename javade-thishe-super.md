@@ -49,5 +49,5 @@ public class B extends A{
 输出：cn.test.B
 ```
 
-
+在继承关系中，不管父类还是子类，这些类里面的this都代表了最终new出来时的那个类型的实例对象，所以在父类中你可以中this获取到子类的信息！
 
