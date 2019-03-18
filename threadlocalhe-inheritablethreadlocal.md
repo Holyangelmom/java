@@ -8,6 +8,8 @@
 
 [https://www.jianshu.com/p/56f64e3c1b6c](https://www.jianshu.com/p/56f64e3c1b6c)
 
+https://www.jianshu.com/p/a1cd61fa22da
+
 ### 2、ThreadLocal
 
 ##### （1）ThreadLocal是什么？
@@ -68,7 +70,9 @@ ThreadLocalMap中解决Hash冲突采用了线性探测的方式，就是简单�
 
 问题描述（copy一下参考资料）：
 
-前面提到，map内部还有一个Entry类，在构造方法中定义key为弱引用（Entry\(ThreadLocal&lt;?&gt; k, Object v\) ）。弱引用是什么鬼还不知道，查了资料说发生GC时弱引用Key会被回收。key是弱引用，value是强引用，则key被回收时，value不会被回收。若线程一直运行则发生内存泄漏。
+前面提到，map内部还有一个Entry类，在构造方法中定义key为弱引用（Entry\(ThreadLocal&lt;?&gt; k, Object v\) ）。弱引用是什么鬼还不知道，查了资料说发生GC时弱引用Key会被回收。key是弱引用，value是强引用，则key被回收时，value不会被回收。若线程一直运行则可能发生内存泄漏。尽管jvm团队采取一些措施防止ThreadLocalMap内存泄漏，但如此也并不能保证ThreadLocal不会发生内存泄漏，详情参考https://www.jianshu.com/p/a1cd61fa22da。
+
+
 
 想法（copy一下参考资料）：
 
