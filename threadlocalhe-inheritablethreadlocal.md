@@ -44,5 +44,3 @@ ThreadLocal.ThreadLocalMap对象，该map就是由ThreadLocal内部维护。
 
 
 
-
-
