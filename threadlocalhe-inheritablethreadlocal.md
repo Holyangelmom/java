@@ -6,13 +6,15 @@
 
 [https://www.jianshu.com/p/98b68c97df9b](https://www.jianshu.com/p/98b68c97df9b)
 
-### 2、ThreadLocal是什么？
+### 2、ThreadLocal
+
+##### （1）ThreadLocal是什么？
 
 ThreadLocal提供了thread-local的变量。这些变量不同于它们自身正常的形态——每个线程通过自身get或set方法访问thread-local变量时，访问到的都是thread-local变量的副本，也就是说每个线程在使用该变量时互不干扰。我在参考资料的模型图基础上改了一下，做了以下这张模型图。
 
 ![](/assets/ThreadLocal在各线程的模型图.png)
 
-### 3、ThreadLocal源码跟踪
+##### （2）、ThreadLocal源码跟踪
 
 我直接在项目中找了个例子，跟踪一下。先是ThreadLocal的get\(\)方法。
 
@@ -35,8 +37,4 @@ ThreadLocal.ThreadLocalMap对象，该map就是由ThreadLocal内部维护。
 最后看看ThreadLocal.get\(\)中最后return的setInitialValue\(\)方法，实际上和set\(\)方法差不多，都先判断map是否为空，若不为空，则设置value值，否则创建map后再set value。
 
 ![](/assets/setInitialValue方法.png)
-
-
-
-
 
