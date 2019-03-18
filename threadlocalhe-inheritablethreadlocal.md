@@ -18,10 +18,6 @@ ThreadLocal提供了thread-local的变量。这些变量不同于它们自身正
 
 ![](/assets/ThreadLocal堆栈结构图.png)
 
-
-
-
-
 ##### （2）、ThreadLocal源码跟踪
 
 我直接在项目中找了个例子，跟踪一下。先是ThreadLocal的get\(\)方法。
