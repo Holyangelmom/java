@@ -38,5 +38,11 @@ ThreadLocal.ThreadLocalMap对象，该map就是由ThreadLocal内部维护。
 
 ![](/assets/setInitialValue方法.png)
 
+### 3、InheritableThreadLocal
+
+##### （1）InheritableThreadLocal是什么？
+
+
+
 
 
