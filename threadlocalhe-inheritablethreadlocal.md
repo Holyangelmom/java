@@ -30,9 +30,21 @@ ThreadLocal提供了thread-local的变量。这些变量不同于它们自身正
 
 ThreadLocal.ThreadLocalMap对象，该map就是由ThreadLocal内部维护。
 
-
-
 ![](/assets/threadLocals定义.png)
+
+最后看看ThreadLocal.get\(\)中最后return的setInitialValue\(\)方法，实际上和set\(\)方法差不多，都先判断map是否为空，若不为空，则设置value值，否则创建map后再set value。
+
+![](/assets/setInitialValue方法.png)
+
+
+
+
+
+
+
+
+
+
 
 
 
