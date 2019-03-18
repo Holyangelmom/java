@@ -44,7 +44,9 @@ ThreadLocal.ThreadLocalMap对象，该map就是由ThreadLocal内部维护。
 
 核心代码有点复杂，看了些资料，暂时没时间整理，先记录一下两种地址算法的思想：**开放地址法、链表法。**
 
-**开放地址法：**
+
+
+**：**
 
 经过某种hash算法计算出地址后，查看该地址是否已存有数据。若无，则存入数据；否则当发生地址冲突时，按照某种方法继续探测哈希表中的其他存储单元，直到找到空位置为止。
 
@@ -52,9 +54,49 @@ ThreadLocal.ThreadLocalMap对象，该map就是由ThreadLocal内部维护。
 
 经过某种hash算法计算出地址后，查看该地址是否已存有数据。若无，则存入数据；否则将待插入的数据链接到当前链表尾部或头部。
 
+##### （4）ThreadLocalMap的hash冲突问题
+
+（copy一下参考资料）
+
+ThreadLocalMap中解决Hash冲突采用了线性探测的方式，就是简单的步长加1或减1，寻找下一个相邻的位置。显然ThreadLocalMap采用线性探测的方式解决Hash冲突的效率很低。如果有大量不同的ThreadLocal对象放入map中时发送冲突，或者发生二次冲突，则效率很低。
+
+个人感觉在ThreadLocal的应用场景中不会有大量的数据存储，利用简单的线性查找方法足以解决冲突问题。
+
 ### 3、InheritableThreadLocal
 
 ##### （1）InheritableThreadLocal是什么？
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
