@@ -26,3 +26,25 @@ ThreadLocal提供了thread-local的变量。这些变量不同于它们自身正
 
 ![](/assets/ThreadLocal.ThreadLocalMap定义.png)
 
+再看看ThreadLocal.get\(\)中的getMap\(t\)，它直接return当前线程的threadLocals变量，再看看threadLocals这玩意儿，实际上是一个
+
+ThreadLocal.ThreadLocalMap对象，该map就是由ThreadLocal内部维护。
+
+
+
+![](/assets/threadLocals定义.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
