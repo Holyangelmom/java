@@ -26,7 +26,7 @@ ThreadLocal提供了thread-local的变量。这些变量不同于它们自身正
 
 ![](/assets/ThreadLocal.get的detail.png)
 
-先看看ThreadLocalMap这玩意儿，实际上是ThreadLocal自定义的hash map，用于维护线程本地的values。再看看map内部还有一个Entry类，它继承WeakReference&lt;ThreadLocal&lt;?&gt;&gt;——（弱引用，生命周期只能存活到下次GC前）也就限制ThreadLocalMap只能存储ThreadLocal类型的对象。再看看Entry类内部只有一个value对象，存储了最终的对象。
+先看看ThreadLocalMap这玩意儿，实际上是ThreadLocal自定义的hash map，用于维护线程本地的values。再看看map内部还有一个Entry类，它继承WeakReference&lt;ThreadLocal&lt;?&gt;&gt;——（弱引用，生命周期只能存活到下次GC前），也就限制ThreadLocalMap只能存储ThreadLocal类型的对象。再看看Entry类内部只有一个value对象，存储了最终的对象。
 
 ![](/assets/ThreadLocal.ThreadLocalMap定义.png)
 
@@ -39,6 +39,18 @@ ThreadLocal.ThreadLocalMap对象，该map就是由ThreadLocal内部维护。
 最后看看ThreadLocal.get\(\)中最后return的setInitialValue\(\)方法，实际上和set\(\)方法差不多，都先判断map是否为空，若不为空，则设置value值，否则创建map后再set value。
 
 ![](/assets/setInitialValue方法.png)
+
+##### （3）ThreadLocal核心
+
+核心代码有点复杂，看了些资料，暂时没时间整理，先记录一下两种地址算法：**开放地址法、链表法。**
+
+**开放地址法：**
+
+经过某种hash算法计算出地址后，查看该地址是否已存有数据。若无，则存入数据；否则当发生地址冲突时，按照某种方法继续探测哈希表中的其他存储单元，直到找到空位置为止。
+
+**链表法：**
+
+
 
 ### 3、InheritableThreadLocal
 
