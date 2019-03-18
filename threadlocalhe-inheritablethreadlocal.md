@@ -54,19 +54,23 @@ ThreadLocal.ThreadLocalMap对象，该map就是由ThreadLocal内部维护。
 
 ##### （4）ThreadLocalMap的hash冲突问题
 
-（copy一下参考资料）
+问题描述（copy一下参考资料）：
 
 ThreadLocalMap中解决Hash冲突采用了线性探测的方式，就是简单的步长加1或减1，寻找下一个相邻的位置。显然ThreadLocalMap采用线性探测的方式解决Hash冲突的效率很低。如果有大量不同的ThreadLocal对象放入map中时发送冲突，或者发生二次冲突，则效率很低。
+
+个人想法：
 
 个人感觉在ThreadLocal的应用场景中不会有大量的数据存储，较为合理的开放地址法使hash冲突很少，即使有冲突利用简单的线性查找方法足以解决。
 
 **（5）ThreadLocalMap内存泄漏问题**
 
-前面提到，map内部还有一个Entry类，在构造方法中定义key为弱引用（Entry\(ThreadLocal&lt;?&gt; k, Object v\) ）。弱引用是什么鬼还不知道，查了资料说发生GC时弱引用Key会被回收。key是弱引用，value是强引用，则key被回收时，value不会被回收。
+问题描述：
 
+前面提到，map内部还有一个Entry类，在构造方法中定义key为弱引用（Entry\(ThreadLocal&lt;?&gt; k, Object v\) ）。弱引用是什么鬼还不知道，查了资料说发生GC时弱引用Key会被回收。key是弱引用，value是强引用，则key被回收时，value不会被回收。若线程一直运行则发生内存泄漏。
 
+想法（copy一下参考资料）：
 
-
+既然Key是弱引用，那么我们要做的事，就是在调用ThreadLocal的get\(\)、set\(\)方法时完成后再调用remove方法，将Entry节点和Map的引用关系移除，这样整个Entry对象在GC Roots分析后就变成不可达了，下次GC的时候就可以被回收。
 
 ### 3、InheritableThreadLocal
 
