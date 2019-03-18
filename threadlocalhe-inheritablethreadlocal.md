@@ -6,6 +6,8 @@
 
 [https://www.jianshu.com/p/98b68c97df9b](https://www.jianshu.com/p/98b68c97df9b)
 
+https://www.jianshu.com/p/56f64e3c1b6c
+
 ### 2、ThreadLocal
 
 ##### （1）ThreadLocal是什么？
