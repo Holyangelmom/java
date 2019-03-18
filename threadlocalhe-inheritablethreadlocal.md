@@ -50,7 +50,7 @@ ThreadLocal.ThreadLocalMap对象，该map就是由ThreadLocal内部维护。
 
 **链表法：**
 
-
+经过某种hash算法计算出地址后，查看该地址是否已存有数据。若无，则存入数据；否则将待插入的数据链接到当前链表尾部或头部。
 
 ### 3、InheritableThreadLocal
 
