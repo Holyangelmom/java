@@ -64,7 +64,7 @@ ThreadLocalMap中解决Hash冲突采用了线性探测的方式，就是简单�
 
 **（5）ThreadLocalMap内存泄漏问题**
 
-问题描述：
+问题描述（copy一下参考资料）：
 
 前面提到，map内部还有一个Entry类，在构造方法中定义key为弱引用（Entry\(ThreadLocal&lt;?&gt; k, Object v\) ）。弱引用是什么鬼还不知道，查了资料说发生GC时弱引用Key会被回收。key是弱引用，value是强引用，则key被回收时，value不会被回收。若线程一直运行则发生内存泄漏。
 
