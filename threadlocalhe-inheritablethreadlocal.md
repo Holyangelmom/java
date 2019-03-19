@@ -40,17 +40,17 @@ ThreadLocal.ThreadLocalMap对象，该map就是由ThreadLocal内部维护。
 
 ![](/assets/threadLocals定义.png)
 
-最后看看ThreadLocal.get\(\)中最后return的setInitialValue\(\)方法，实际上和set\(\)方法差不多，都先判断map是否为空，若不为空，则设置value值，否则创建map后再set value。
+最后看看ThreadLocal.get\(\)方法最后return的setInitialValue\(\)方法，实际上和set\(\)方法差不多，都先判断map是否为空，若不为空，则设置value值，否则创建map后再set value。
 
 ![](/assets/setInitialValue方法.png)
 
 ##### （3）ThreadLocal核心
 
-核心代码有点复杂，看了些资料，暂时没时间整理，先记录一下两种地址算法的思想：**开放地址法、链表法。**
+核心代码有点复杂，看了些资料，暂时消化不了，先记录一下两种地址算法的思想：**开放地址法、链表法。**
 
 **开放地址法：**
 
-经过某种hash算法计算出地址后，查看该地址是否已存有数据。若无，则存入数据；否则当发生地址冲突时，按照某种方法继续探测哈希表中的其他存储单元，直到找到空位置为止。
+经过某种hash算法计算出地址后，查看该地址是否已存有数据。若无，则存入数据；否则（说明已发生地址冲突）按照某种方法继续探测哈希表中的其他存储单元，直到找到空位置为止。
 
 **链表法：**
 
@@ -96,17 +96,5 @@ InheritableThreadLocal继承ThreadLocal，重写了下面三个方法。除了�
 
 可以看到最终调用ThreadLocalMap\(ThreadLocalMap parentMap\)，看看这个方法。该方法只被createInheritedMap\(ThreadLocalMap parentMap\)方法调用。实际上就是将父线程的ThreadLocalMap复制到自己的ThreadLocalMap里面来，这样我们就可以使用InheritableThreadLocal访问到父线程中的变量了。
 
-
-
-
-
 ![](/assets/ThreadLocalMap%28ThreadLocalMap parentMap%29.png)
-
-
-
-
-
-
-
-
 
