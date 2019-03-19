@@ -82,3 +82,15 @@ ThreadLocalMap中解决Hash冲突采用了线性探测的方式，就是简单�
 
 ThreadLocal固然很好，但是子线程并不能取到父线程的ThreadLocal的变量。而InheritableThreadLocal可以解决这个问题。
 
+##### （2）InheritableThreadLocal源码
+
+（copy参考资料）
+
+InheritableThreadLocal继承ThreadLocal，重写了下面三个方法。除了三个方法之外，其他所有对InheritableThreadLocal的调用都是对ThreadLocal的调用。
+
+![](/assets/InheritableThreadLocal.png)
+
+
+
+
+
