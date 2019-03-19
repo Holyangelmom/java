@@ -90,3 +90,23 @@ InheritableThreadLocal继承ThreadLocal，重写了下面三个方法。除了�
 
 ![](/assets/InheritableThreadLocal.png)
 
+在Thread类中，有个成员：inheritableThreadLocals。跟踪一下new一个Thread的调用路径，看看做了哪些工作。
+
+![](/assets/Thread创建对象调用路径.png)
+
+可以看到最终调用ThreadLocalMap\(ThreadLocalMap parentMap\)，看看这个方法。该方法只被createInheritedMap\(ThreadLocalMap parentMap\)方法调用。实际上就是将父线程的ThreadLocalMap复制到自己的ThreadLocalMap里面来，这样我们就可以使用InheritableThreadLocal访问到父线程中的变量了。
+
+
+
+
+
+![](/assets/ThreadLocalMap%28ThreadLocalMap parentMap%29.png)
+
+
+
+
+
+
+
+
+
