@@ -8,7 +8,17 @@
 
 ### 2、properties文件配置
 
-##### （1）基本格式
+先讲讲log4j基础知识。
+
+##### （1）日志输出级别
+
+level优先级分为OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL。从右往左，日志信息越来越严重。
+
+##### （2）根Logger
+
+根logger主要定义log4j支持的日志级别及输出目的地，语法为：log4j.rootLogger=\[level\],appenderName,appenderName,…其中level 是日志记录的优先级，appenderName指定日志信息输出到哪个地方，可同时指定多个输出目的地。
+
+##### （2）基本格式
 
 \#配置根Logger
 
@@ -34,9 +44,7 @@ log4j.appender.appenderName.layout.option1  =  value1
 
 log4j.appender.appenderName.layout.optionN  =  valueN
 
-##### （2）日志输出级别
+##### 
 
-level优先级分为OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL。从右往左，日志信息越来越严重。
-
-（）
+（3）
 
