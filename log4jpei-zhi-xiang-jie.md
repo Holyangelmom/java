@@ -8,7 +8,7 @@
 
 [https://blog.csdn.net/azheng270/article/details/2173430/](https://blog.csdn.net/azheng270/article/details/2173430/)
 
-https://www.cnblogs.com/byron0918/p/5769646.html
+[https://www.cnblogs.com/byron0918/p/5769646.html](https://www.cnblogs.com/byron0918/p/5769646.html)
 
 ### 2、properties文件配置
 
@@ -24,7 +24,23 @@ level优先级分为OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL。从右往�
 
 ##### （3）输出目的地Appender
 
+Appender定义日志信息输出在什么位置。Log4j提供的appender有以下几种：
 
+* org.apache.log4j.ConsoleAppender（控制台）， 
+* org.apache.log4j.FileAppender（文件）， 
+* org.apache.log4j.DailyRollingFileAppender（每天产生一个日志文件），
+* org.apache.log4j.RollingFileAppender（文件大小到达指定尺寸的时候产生一个新的文件） 
+* org.apache.log4j.WriterAppender（将日志信息以流格式发送到任意指定的地方）
+
+Appender主要语法为：
+
+log4j.appender.appenderName = classInfo
+
+log4j.appender.appenderName.option1 = value1
+
+…
+
+log4j.appender.appenderName.optionN = valueN
 
 ##### （2）基本格式
 
