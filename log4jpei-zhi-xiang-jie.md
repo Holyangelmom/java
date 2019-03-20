@@ -146,7 +146,7 @@ log4j.appender.appendName.File=${webApp.root}logs/log.log
 
 ##### 
 
-##### （8）配置样例
+##### （9）配置样例
 
 \#配置根Logger
 
@@ -186,5 +186,5 @@ log4j.appender.appendName.File=${webApp.root}logs/log.log
 
 ### 3、xml文件配置
 
-
+（暂时没用到，略）
 
