@@ -108,31 +108,18 @@ Layout 语法为：
 
 推荐使用两种方式：
 
-使用中间件环境变量：log4j.appender.appendName.File=${catalina.home}/logs/name.log 
+使用中间件环境变量：log4j.appender.appendName.File=${catalina.home}/logs/name.log
 
 在web.xml中添加：
 
-int start = \(Integer\) dtbHelper.getObjectValue\("start"\);
+```
+<context-param>
+	<param-name>webAppRootKey</param-name>
+	<param-value>webApp.root</param-value>  
+</context-param>
+```
 
-		int limit = \(Integer\) dtbHelper.getObjectValue\("limit"\);
 
-		String departmentid = dtbHelper.getStringValue\("departmentid"\);
-
-		String deptName = dtbHelper.getStringValue\("deptname"\);
-
-		String deptLevel = dtbHelper.getStringValue\("deptLevel"\);
-
-		String \_deptId = dtbHelper.getStringValue\("\_deptId"\);
-
-		String \_deptlevel = PubAction.getDeptlevel\(\_deptId\);
-
-&lt;context-param&gt;
-
-	&lt;param-name&gt;webAppRootKey&lt;/param-name&gt;
-
-	&lt;param-value&gt;webApp.root&lt;/param-value&gt;  
-
-&lt;/context-param&gt;
 
 ##### （8）properties基本格式
 
