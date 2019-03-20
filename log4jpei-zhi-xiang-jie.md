@@ -8,7 +8,7 @@
 
 ### 2、properties文件配置
 
-（1）、基本格式
+##### （1）基本格式
 
 \#配置根Logger
 
@@ -18,21 +18,25 @@ log4j.rootLogger  =   \[ level \]   ,  appenderName1 ,  appenderName2 ,  …
 
 log4j.appender.appenderName  =  fully.qualified.name.of.appender.class
 
-　　log4j.appender.appenderName.option1  =  value1
+log4j.appender.appenderName.option1  =  value1
 
-　　…
+…
 
-　　log4j.appender.appenderName.optionN  =  valueN
+log4j.appender.appenderName.optionN  =  valueN
 
 \#配置日志信息的格式（布局）
 
-log4j.appender.appenderName.layout  =  fully.qualified.name.of.layout.class 
+log4j.appender.appenderName.layout  =  fully.qualified.name.of.layout.class
 
-　　log4j.appender.appenderName.layout.option1  =  value1
+log4j.appender.appenderName.layout.option1  =  value1
 
-　　… 
+…
 
-　　log4j.appender.appenderName.layout.optionN  =  valueN
+log4j.appender.appenderName.layout.optionN  =  valueN
 
+##### （2）日志输出级别
 
+level优先级分为OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL。从右往左，日志信息越来越严重。
+
+（）
 
