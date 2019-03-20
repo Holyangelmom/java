@@ -117,7 +117,12 @@ Layout 语法为：
     <param-name>webAppRootKey</param-name>
     <param-value>webApp.root</param-value>  
 </context-param>
+
+log4j.properties：
+log4j.appender.appendName.File=${webApp.root}logs/log.log
 ```
+
+
 
 ##### （8）properties基本格式
 
