@@ -26,7 +26,7 @@ level优先级分为OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL。从右往�
 
 可以设置不同package的日志输出级别，语法为：log4j.logger.packageName=level。
 
-##### （3）输出目的地Appender
+##### （4）输出目的地Appender
 
 Appender定义日志信息输出在什么位置。Log4j提供的appender有以下几种：
 
@@ -46,7 +46,7 @@ Appender主要语法为：
 >
 > log4j.appender.appenderName.optionN = valueN
 
-##### （4）日志信息的格式Layout
+##### （5）日志信息的格式Layout
 
 Layout 负责格式化Appender的输出。Log4j提供的layout有以下几种：
 
