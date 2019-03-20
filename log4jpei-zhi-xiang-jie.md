@@ -24,7 +24,10 @@ level优先级分为OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL。从右往�
 
 ##### （3）package输出级别（子logger）
 
-可以设置不同package的日志输出级别，语法为：log4j.logger.packageName=level。
+可以设置不同package的日志输出级别，语法为：
+
+* log4j.logger.packageName=level   （指定package下的输出全为level级别的输出）
+* log4j.additivity.packageName=true/false  （log4j.logger默认情况下继承rootLogger的设置。若不想继承rootLogger，该参数可设置为false）
 
 ##### （4）输出目的地Appender
 
