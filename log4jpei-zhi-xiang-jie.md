@@ -124,20 +124,20 @@ log4j.appender.appendName.File=${webApp.root}logs/log.log
 
 ##### （8）properties基本格式
 
-> \#配置根Logger
->
+\#配置根Logger
+
 > log4j.rootLogger  =   \[ level \]   ,  appenderName1 ,  appenderName2 ,  …
->
-> \#配置日志信息输出目的地Appender
->
+
+\#配置日志信息输出目的地Appender
+
 > log4j.appender.appenderName  =  fully.qualified.name.of.appender.class
 >
 > log4j.appender.appenderName.option1  =  value1
 >
 > log4j.appender.appenderName.optionN  =  valueN
->
-> \#配置日志信息的格式（布局）
->
+
+\#配置日志信息的格式（布局）
+
 > log4j.appender.appenderName.layout  =  fully.qualified.name.of.layout.class
 >
 > log4j.appender.appenderName.layout.option1  =  value1
@@ -183,8 +183,6 @@ log4j.appender.appendName.File=${webApp.root}logs/log.log
 > log4j.appender.DBAccessBeanFileAppender.layout=org.apache.log4j.PatternLayout
 >
 > log4j.appender.DBAccessBeanFileAppender.layout.ConversionPattern=\[%r\]\[%d{yyyy-MM-dd HH:mm:ss}\]\[%-5p\] %m%n
-
-
 
 ### 3、xml文件配置
 
