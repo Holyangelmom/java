@@ -4,7 +4,11 @@
 
 日志是应用软件中不可缺少的部分，可帮助开发人员、运维人员快速准确地定位问题所在。Apache的开源项目log4j是一个功能强大的日志组，件提供方便的日志记录。log4j有两种配置方式，一是通过java程序动态设置，二是通过配置文件的方式进行设置。第一种缺点明显，第二种支持两种格式的配置文件：xml文件、properties文件。下面主要讲解xml文件、properties文件的配置方式。
 
-参考资料：[https://blog.csdn.net/azheng270/article/details/2173430/](https://blog.csdn.net/azheng270/article/details/2173430/)
+参考资料：
+
+[https://blog.csdn.net/azheng270/article/details/2173430/](https://blog.csdn.net/azheng270/article/details/2173430/)
+
+https://www.cnblogs.com/byron0918/p/5769646.html
 
 ### 2、properties文件配置
 
@@ -17,6 +21,10 @@ level优先级分为OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL。从右往�
 ##### （2）根Logger
 
 根logger主要定义log4j支持的日志级别及输出目的地，语法为：log4j.rootLogger=\[level\],appenderName,appenderName,…其中level 是日志记录的优先级，appenderName指定日志信息输出到哪个地方，可同时指定多个输出目的地。
+
+##### （3）输出目的地Appender
+
+
 
 ##### （2）基本格式
 
