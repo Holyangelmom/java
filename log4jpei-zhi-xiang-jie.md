@@ -110,16 +110,14 @@ Layout 语法为：
 
 使用中间件环境变量：log4j.appender.appendName.File=${catalina.home}/logs/name.log
 
-在web.xml中添加：
+在web.xml中添加（在非spring项目下试过不成功）：
 
 ```
 <context-param>
-	<param-name>webAppRootKey</param-name>
-	<param-value>webApp.root</param-value>  
+    <param-name>webAppRootKey</param-name>
+    <param-value>webApp.root</param-value>  
 </context-param>
 ```
-
-
 
 ##### （8）properties基本格式
 
