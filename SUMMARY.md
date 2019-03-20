@@ -7,5 +7,4 @@
 * [Java关键字](javaguan-jian-zi.md)
   * [1、super和this](javaguan-jian-zi/1superhe-this.md)
   * [2、native](javaguan-jian-zi/2native.md)
-* [Java的super和this](javade-thishe-super.md)
 
