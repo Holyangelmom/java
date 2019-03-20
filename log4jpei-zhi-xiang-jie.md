@@ -158,7 +158,7 @@ log4j.appender.appendName.File=${webApp.root}logs/log.log
 >
 > log4j.logger.com.ibatis.common.jdbc.SimpleDataSource=debug
 
-\#STDOUT
+\#appender STDOUT
 
 > log4j.appender.STDOUT=org.apache.log4j.ConsoleAppender
 >
@@ -166,7 +166,7 @@ log4j.appender.appendName.File=${webApp.root}logs/log.log
 >
 > log4j.appender.STDOUT.layout.ConversionPattern=%-d{yyyy-MM-dd HH:mm:ss} \[%p\] \[%c\] - %m%n
 
-\#DBACESS MySql
+\#appender DBACESS MySql
 
 > log4j.logger.com.nantian.iwap.persistence.DBAccessMySql=INFO,DBAccessBeanFileAppender
 >
