@@ -22,6 +22,10 @@ level优先级分为OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL。从右往�
 
 根logger主要定义log4j支持的日志级别及输出目的地，语法为：log4j.rootLogger=\[level\],appenderName,appenderName,…其中level 是日志记录的优先级，appenderName指定日志信息输出到哪个地方，可同时指定多个输出目的地。
 
+##### （3）package输出级别
+
+可以设置不同package的日志输出级别，语法为：log4j.logger.packageName=level。
+
 ##### （3）输出目的地Appender
 
 Appender定义日志信息输出在什么位置。Log4j提供的appender有以下几种：
@@ -51,7 +55,15 @@ Layout 负责格式化Appender的输出。Log4j提供的layout有以下几种：
 * org.apache.log4j.SimpleLayout（包含日志信息的级别和信息字符串）
 * org.apache.log4j.TTCCLayout（包含日志产生的时间、线程、类别等等信息）
 
+Layout 语法为：
 
+> log4j.appender.appenderName.layout = classInfo
+>
+> log4j.appender.appenderName.layout.option1 = value1
+>
+> …
+>
+> log4j.appender.appenderName.layout.optionN = valueN
 
 ##### （2）基本格式
 
