@@ -22,7 +22,7 @@ level优先级分为OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL。从右往�
 
 根logger主要定义log4j支持的日志级别及输出目的地，语法为：log4j.rootLogger=\[level\],appenderName,appenderName,…其中level 是日志记录的优先级，appenderName指定日志信息输出到哪个地方，可同时指定多个输出目的地。
 
-##### （3）package输出级别
+##### （3）package输出级别（子logger）
 
 可以设置不同package的日志输出级别，语法为：log4j.logger.packageName=level。
 
