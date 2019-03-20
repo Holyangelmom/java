@@ -45,8 +45,6 @@ Appender主要语法为：
 >
 > log4j.appender.appenderName.option1 = value1
 >
-> …
->
 > log4j.appender.appenderName.optionN = valueN
 
 ##### （5）日志信息的格式Layout
@@ -63,8 +61,6 @@ Layout 语法为：
 > log4j.appender.appenderName.layout = classInfo
 >
 > log4j.appender.appenderName.layout.option1 = value1
->
-> …
 >
 > log4j.appender.appenderName.layout.optionN = valueN
 
@@ -106,33 +102,61 @@ Layout 语法为：
 >
 > 4\)%20.30c:如果category的名称小于20就补空格，并且右对齐，如果其名称长于30字符，就从左边较远输出的字符截掉。
 
-##### （7）properties基本格式
+##### 
 
-\#配置根Logger
+##### （7）日志文件输出路径配置
 
-log4j.rootLogger  =   \[ level \]   ,  appenderName1 ,  appenderName2 ,  …
+推荐使用两种方式：
 
-\#配置日志信息输出目的地Appender
+使用中间件环境变量：log4j.appender.appendName.File=${catalina.home}/logs/name.log 
 
-log4j.appender.appenderName  =  fully.qualified.name.of.appender.class
+在web.xml中添加：
 
-log4j.appender.appenderName.option1  =  value1
+int start = \(Integer\) dtbHelper.getObjectValue\("start"\);
 
-…
+		int limit = \(Integer\) dtbHelper.getObjectValue\("limit"\);
 
-log4j.appender.appenderName.optionN  =  valueN
+		String departmentid = dtbHelper.getStringValue\("departmentid"\);
 
-\#配置日志信息的格式（布局）
+		String deptName = dtbHelper.getStringValue\("deptname"\);
 
-log4j.appender.appenderName.layout  =  fully.qualified.name.of.layout.class
+		String deptLevel = dtbHelper.getStringValue\("deptLevel"\);
 
-log4j.appender.appenderName.layout.option1  =  value1
+		String \_deptId = dtbHelper.getStringValue\("\_deptId"\);
 
-…
+		String \_deptlevel = PubAction.getDeptlevel\(\_deptId\);
 
-log4j.appender.appenderName.layout.optionN  =  valueN
+&lt;context-param&gt;
+
+	&lt;param-name&gt;webAppRootKey&lt;/param-name&gt;
+
+	&lt;param-value&gt;webApp.root&lt;/param-value&gt;  
+
+&lt;/context-param&gt;
+
+##### （8）properties基本格式
+
+> \#配置根Logger
+>
+> log4j.rootLogger  =   \[ level \]   ,  appenderName1 ,  appenderName2 ,  …
+>
+> \#配置日志信息输出目的地Appender
+>
+> log4j.appender.appenderName  =  fully.qualified.name.of.appender.class
+>
+> log4j.appender.appenderName.option1  =  value1
+>
+> log4j.appender.appenderName.optionN  =  valueN
+>
+> \#配置日志信息的格式（布局）
+>
+> log4j.appender.appenderName.layout  =  fully.qualified.name.of.layout.class
+>
+> log4j.appender.appenderName.layout.option1  =  value1
+>
+> log4j.appender.appenderName.layout.optionN  =  valueN
 
 ##### 
 
-（3）
+（8）
 
