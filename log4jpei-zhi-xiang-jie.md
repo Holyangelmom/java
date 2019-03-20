@@ -34,13 +34,24 @@ Appender定义日志信息输出在什么位置。Log4j提供的appender有以�
 
 Appender主要语法为：
 
-log4j.appender.appenderName = classInfo
+> log4j.appender.appenderName = classInfo
+>
+> log4j.appender.appenderName.option1 = value1
+>
+> …
+>
+> log4j.appender.appenderName.optionN = valueN
 
-log4j.appender.appenderName.option1 = value1
+##### （4）日志信息的格式Layout
 
-…
+Layout 负责格式化Appender的输出。Log4j提供的layout有以下几种：
 
-log4j.appender.appenderName.optionN = valueN
+* org.apache.log4j.HTMLLayout（以HTML表格形式布局）
+* org.apache.log4j.PatternLayout（可以灵活地指定布局模式）
+* org.apache.log4j.SimpleLayout（包含日志信息的级别和信息字符串）
+* org.apache.log4j.TTCCLayout（包含日志产生的时间、线程、类别等等信息）
+
+
 
 ##### （2）基本格式
 
