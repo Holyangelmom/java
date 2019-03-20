@@ -122,8 +122,6 @@ log4j.properties：
 log4j.appender.appendName.File=${webApp.root}logs/log.log
 ```
 
-
-
 ##### （8）properties基本格式
 
 > \#配置根Logger
@@ -148,5 +146,49 @@ log4j.appender.appendName.File=${webApp.root}logs/log.log
 
 ##### 
 
-（8）
+##### （8）配置样例
+
+\#配置根Logger
+
+log4j.rootLogger=debug,STDOUT
+
+
+
+\#子logger
+
+log4j.logger.com.ibatis=debug
+
+log4j.logger.com.ibatis.common.jdbc.SimpleDataSource=debug
+
+
+
+\#STDOUT
+
+log4j.appender.STDOUT=org.apache.log4j.ConsoleAppender
+
+log4j.appender.STDOUT.layout=org.apache.log4j.PatternLayout  
+
+log4j.appender.STDOUT.layout.ConversionPattern=%-d{yyyy-MM-dd HH:mm:ss} \[%p\] \[%c\] - %m%n
+
+
+
+\#DBACESS MySql
+
+log4j.logger.com.nantian.iwap.persistence.DBAccessMySql=INFO,DBAccessBeanFileAppender
+
+log4j.additivity.com.nantian.iwap.persistence.DBAccessMySql=false
+
+log4j.appender.DBAccessBeanFileAppender=org.apache.log4j.DailyRollingFileAppender
+
+log4j.appender.DBAccessBeanFileAppender.File=${catalina.home}/logs/dbaccess.log
+
+log4j.appender.DBAccessBeanFileAppender.Append=true
+
+log4j.appender.DBAccessBeanFileAppender.Threshold=INFO
+
+log4j.appender.DBAccessBeanFileAppender.layout=org.apache.log4j.PatternLayout
+
+log4j.appender.DBAccessBeanFileAppender.layout.ConversionPattern=\[%r\]\[%d{yyyy-MM-dd HH:mm:ss}\]\[%-5p\] %m%n
+
+
 
