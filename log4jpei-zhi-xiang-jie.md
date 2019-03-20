@@ -12,7 +12,7 @@ copy参考资料：
 
 ### 2、properties文件配置
 
-先讲讲log4j基础知识。
+先讲讲log4j基础知识，再贴出配置样例。
 
 ##### （1）日志输出级别
 
@@ -183,6 +183,10 @@ log4j.appender.appendName.File=${webApp.root}logs/log.log
 > log4j.appender.DBAccessBeanFileAppender.layout=org.apache.log4j.PatternLayout
 >
 > log4j.appender.DBAccessBeanFileAppender.layout.ConversionPattern=\[%r\]\[%d{yyyy-MM-dd HH:mm:ss}\]\[%-5p\] %m%n
+
+
+
+### 3、xml文件配置
 
 
 
