@@ -14,7 +14,7 @@ fastJson是阿里提供的快速解析json包，对于json格式的字符串的�
 
 **（1）JSON类**。
 
-抽象类，实现了JSONStreamAware和JSONAware接口，这俩接口都只有一个方法。JSON抽象类除了toString\(\)、toJSONString\(\)、writeJSONString\(\)这仨方法外，其他几乎都是static final方法，亦即：方法不可重写，但可直接在子类和父类中静态调用。
+抽象类，实现了JSONStreamAware和JSONAware接口，这俩接口都只有一个方法。JSON抽象类除了toString\(\)、toJSONString\(\)、writeJSONString\(\)这仨方法外，其他几乎都是static final方法，亦即：方法不可重写，但可直接使用子类或父类来调用。
 
 ![](/assets/JSON类.png)（2）（）**（2）JSONObject类**
 
