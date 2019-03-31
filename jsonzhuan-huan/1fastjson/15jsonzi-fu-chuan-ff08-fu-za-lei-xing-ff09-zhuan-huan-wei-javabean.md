@@ -1,6 +1,13 @@
 ### 1.5、JSON字符串（复杂类型）转换为JavaBean
 
 ```java
+private static final String  COMPLEX_JSON_STR = "
+{\"teacherName\":\"crystall\",\"teacherAge\":27,
+    \"course\":{\"courseName\":\"english\",\"code\":1270},\
+    "students\":[{\"studentName\":\"lily\",\"studentAge\":12},{\"studentName\":\"lucy\",\"studentAge\":15}]
+}";
+
+
 
 
 public static void test(){
