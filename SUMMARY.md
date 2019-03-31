@@ -17,6 +17,7 @@
     * [1.5、JSON字符串（复杂类型）转换为JavaBean](jsonzhuan-huan/1fastjson/15jsonzi-fu-chuan-ff08-fu-za-lei-xing-ff09-zhuan-huan-wei-javabean.md)
     * [1.6、JSON字符串（简单类型）转为List&lt;&gt;](jsonzhuan-huan/1fastjson/16jsonzi-fu-chuan-ff08-jian-dan-lei-xing-ff09-zhuan-wei-list.md)
     * [1.7、JSON字符串（数组类型）转为List&lt;&gt;](jsonzhuan-huan/1fastjson/16jsonzi-fu-chuan-ff08-shu-zu-lei-xing-ff09-zhuan-wei-list.md)
+    * [1.8、JSON字符串（简单类型）转为Map](jsonzhuan-huan/1fastjson/18jsonzi-fu-chuan-ff08-jian-dan-lei-xing-ff09-zhuan-wei-map.md)
     * [1.6、JavaBean、List&lt;&gt;转为JSON字符串](jsonzhuan-huan/1fastjson/16javabeanzhuan-wei-json-zi-fu-chuan-ff08-jian-dan-lei-xing-ff09.md)
-    * [1.7、JSONObject、JSONArray转为JSON字符串](jsonzhuan-huan/1fastjson/17jsonobjectjsonarrayzhuan-wei-json-zi-fu-chuan.md)
+    * 1.8、JSON字符串（简单类型）转为Map
 
