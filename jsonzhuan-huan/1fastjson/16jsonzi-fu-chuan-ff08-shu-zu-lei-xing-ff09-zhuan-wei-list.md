@@ -1,4 +1,4 @@
-### 1.6、JSON字符串（数组类型）转为List&lt;&gt;
+### 1.7、JSON字符串（数组类型）转为List&lt;&gt;
 
 实际上和JSON字符串（数组类型）转换为JavaBean一样。
 
@@ -8,8 +8,11 @@ private static final String  JSON_ARRAY_STR = "[
 {\"studentName\":\"lucy\",\"studentAge\":15}
 ]";
 
+public static void test(){
 
-List<Student> students = JSON.parseObject(json,new TypeReference<List<Student>>(){});
+    List<Student> students = JSON.parseObject(json,new TypeReference<List<Student>>(){});
+}
+
 ```
 
 
