@@ -5,9 +5,10 @@ private static final String  JSON_OBJ_STR = "{\"studentName\":\"lily\",\"student
 
 
 public static void test(){
+
     //用这种方法没有类型安全警告
     JSONObject  jsonObject = JSONObject.parseObject(JSON_OBJ_STR);
-    
+
     Map<String,Object> map = (Map<String,Object>)jsonObject;
 }
 ```
