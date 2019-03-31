@@ -6,6 +6,10 @@
 private static final String  JSON_OBJ_STR = "{\"studentName\":\"lily\",\"studentAge\":12}";
 
 
+public static void test(){
+    JSON_OBJ_STR = "[" + JSON_OBJ_STR + "]";
+    List<Student> students = JSON.parseObject(json,new TypeReference<List<Student>>(){});
+}
 ```
 
 
