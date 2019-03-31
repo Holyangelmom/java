@@ -12,12 +12,12 @@ private static final String  COMPLEX_JSON_STR = "
 
 public static void test(){
 
-    ArrayList<Student> students = JSON.parseObject(JSON_ARRAY_STR, new TypeReference<ArrayList<Student>>() {});
-    //ArrayList<Student> students1 = JSONArray.parseObject(JSON_ARRAY_STR, new TypeReference<ArrayList<Student>>() {});//因为JSONArray继承了JSON，所以这样也是可以的
-
-    for (Student student : students) {
-        System.out.println(student.getStudentName()+":"+student.getStudentAge());
-    }
+    Teacher teacher = JSON.parseObject(COMPLEX_JSON_STR, new TypeReference<Teacher>() {});
+    //Teacher teacher1 = JSON.parseObject(COMPLEX_JSON_STR, new TypeReference<Teacher>() {});//因为JSONObject继承了JSON，所以这样也是可以的
+    String teacherName = teacher.getTeacherName();
+    Integer teacherAge = teacher.getTeacherAge();
+    Course course = teacher.getCourse();
+    List<Student> students = teacher.getStudents();
 }
 ```
 
