@@ -25,9 +25,9 @@
 
 会被子类继承，但不能被重写（也就是不能用override注解该方法）。然而子类可以覆盖父类的该static方法（也就是不使用override注解该方法）。
 
-6、静态内部类
+##### 6、静态内部类
 
-静态变量和静态方法会出现这个语法错误：static methods can only be declared in a static or top level type。其意思是static方法只能在静态或者顶级类型（顶级类型应该就是外部类中）中声明。
+静态变量和静态方法会出现这个语法错误：static methods can only be declared in a static or top level type。其意思是static方法只能在静态或者顶级类型（顶级类型应该就是外部类中）中声明。原因在于静态变量和静态方法都只需要通过类名就能访问，不必通过任何实例化对象；而普通内部类的初始化要利用外部类的实例化对象，这明显违背了static的设计初衷。
 
 因此普通内部类里面不能定义各种静态的成员（包括静态变量、静态方法、静态代码块和静态内部类），而静态内部类中则可以。
 
