@@ -7,6 +7,7 @@
 * [Java关键字](javaguan-jian-zi.md)
   * [1、super和this](javaguan-jian-zi/1superhe-this.md)
   * [2、native](javaguan-jian-zi/2native.md)
+  * [3、static](javaguan-jian-zi/3static.md)
 * [其他问题](qi-ta-wen-ti.md)
 * [JSON转换](jsonzhuan-huan.md)
   * [1、fastjson](jsonzhuan-huan/1fastjson.md)
