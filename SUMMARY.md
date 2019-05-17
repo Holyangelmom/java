@@ -21,4 +21,6 @@
     * [1.8、JSON字符串（简单类型）转为Map](jsonzhuan-huan/1fastjson/18jsonzi-fu-chuan-ff08-jian-dan-lei-xing-ff09-zhuan-wei-map.md)
     * [1.9、JavaBean、List&lt;&gt;、Map转为JSON字符串](jsonzhuan-huan/1fastjson/16javabeanzhuan-wei-json-zi-fu-chuan-ff08-jian-dan-lei-xing-ff09.md)
     * [1.10、JSONObject、JSONArray转为JSON字符串](jsonzhuan-huan/1fastjson/110jsonobjectjsonarrayzhuan-wei-json-zi-fu-chuan.md)
+* [1、基础知识](13001-ji-chu-zhi-shi.md)
+  * [1.1、接口和抽象类的区别](13001-ji-chu-zhi-shi/113001-jie-kou-he-chou-xiang-lei-de-qu-bie.md)
 
