@@ -26,6 +26,7 @@
   * [1.1、接口和抽象类的区别](13001-ji-chu-zhi-shi/113001-jie-kou-he-chou-xiang-lei-de-qu-bie.md)
   * [1.2、数据结构](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou.md)
     * [1.2.1、线性表](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao.md)
-      * [时间复杂度](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/shi-jian-fu-za-du.md)
-      * [特殊点或算法](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa.md)
+      * [1.2.1.1、时间复杂度](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/shi-jian-fu-za-du.md)
+      * [1.2.1.2、特殊点或算法](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa.md)
+        * [1.2.1.2.1、遍历效率对比](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa/12121.md)
 
