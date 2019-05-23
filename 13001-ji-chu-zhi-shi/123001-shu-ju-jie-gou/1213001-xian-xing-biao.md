@@ -8,13 +8,27 @@
 
 对比：
 
-ArrayList查找的时间复杂度：O\(n\)
+ArrayList查找元素的时间复杂度：O\(n\)
 
-LinkedList查找的时间复杂度：O\(n\)
+LinkedList查找元素的时间复杂度：O\(n\)
 
 简述：
 
 一个使用for循环，一个使用while循环 ，长度都为n，所以时间复杂度为O\(n\)。
+
+（2）获取
+
+对比：
+
+ArrayList获取元素的时间复杂度：O\(1\)
+
+LinkedList获取元素的时间复杂度：O\(n\)
+
+简述：
+
+ArrayList直接返回指定下标的元素，而LinkedList先判断指定下标是否小于size/2，判断靠近头部还是尾部再移动“指针”到指定位置，源码如下：
+
+![](/assets/linkedList-get%28%29.png)
 
 
 
