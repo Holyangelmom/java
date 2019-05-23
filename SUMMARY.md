@@ -27,6 +27,6 @@
   * [1.2、数据结构](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou.md)
     * [1.2.1、线性表](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao.md)
       * [1.2.1.1、时间复杂度](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/shi-jian-fu-za-du.md)
-      * [1.2.1.2、遍历效率对比](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/12133001-bian-li-xiao-lv-dui-bi.md)
+      * [1.2.1.2、for/foreach/iterator遍历效率对比](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/12133001-bian-li-xiao-lv-dui-bi.md)
       * [1.2.1.3、特殊点或算法](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa.md)
 
