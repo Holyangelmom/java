@@ -6,9 +6,7 @@
 
 （1）查
 
-ArrayList查找的时间复杂度：O\(1\)
+ArrayList查找的时间复杂度：O\(n\)
 
 LinkedList查找的时间复杂度：O\(n/1\)
-
-
 
