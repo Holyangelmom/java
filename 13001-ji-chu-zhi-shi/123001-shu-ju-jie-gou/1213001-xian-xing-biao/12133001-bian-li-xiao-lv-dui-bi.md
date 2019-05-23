@@ -6,5 +6,5 @@
 
 ![](/assets/linkedList遍历结果.png)
 
-事实证明ArrayList使用for遍历速度最快，LinkedList使用foreach、iterator遍历速度最快。
+事实证明ArrayList使用for遍历速度最快，LinkedList使用foreach、iterator遍历速度最快。而LinkedList的foreach是用iterator实现的。
 
