@@ -10,11 +10,11 @@
 
 ArrayList查找的时间复杂度：O\(n\)
 
-LinkedList查找的时间复杂度：O\(n/2\)
+LinkedList查找的时间复杂度：O\(n\)
 
-详解：
+简述：
 
-使用一个for循环来查找ArrayList的元素，所以时间复杂度为O\(n\)。
+一个使用for循环，一个使用while循环 ，长度都为n，所以时间复杂度为O\(n\)。
 
 
 
