@@ -50,7 +50,7 @@ fail-fast 机制是java集合\(Collection\)中的一种错误机制，JDK并不�
 * modCount是AbstractList的成员变量，被ArrayList继承。它表示该集合实际被修改的次数。
 * expectedModCount 是 ArrayList中的一个内部类——Itr中的成员变量。expectedModCount表示这个迭代器期望该集合被修改的次数。其值是在ArrayList.iterator方法被调用的时候初始化的。只有通过迭代器对集合进行操作，该值才会改变。
 
+在开头的foreach代码中，删除元素调用的是ArrayList的remove方法，再进一步跟踪发现调用了fastRemove方法。在fastRemove方法中只对modCount变量进行修改，并没有修改expectedModCount，因此删除元素后foreach往下遍历时发现`modCount != expectedModCount`，抛出异常。
 
-
-
+![](/assets/fastRemove.png)
 
