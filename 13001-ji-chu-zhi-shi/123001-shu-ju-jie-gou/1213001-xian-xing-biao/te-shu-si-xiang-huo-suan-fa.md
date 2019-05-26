@@ -35,9 +35,13 @@ fail-fast 机制是java集合\(Collection\)中的一种错误机制，JDK并不�
 * 当某一个线程A通过iterator去遍历某集合的过程中，若该集合的内容被其他线程所改变了；那么线程A访问集合时，就会抛出ConcurrentModificationException异常，产生fail-fast事件。
 * 当使用foreach遍历collection时，对collection进行删除/新增操作也会产生fail-fast事件。
 
-
-
 ##### （3）fail-fast原理
 
+产生fail-fast事件，是通过抛出ConcurrentModificationException异常来触发的。那么，ArrayList是如何抛出ConcurrentModificationException异常的呢?在上述代码抛出的异常中跟踪一下，发现进入到ArrayList内部类Itr的next\(\)方法中，因为foreach是基于iterator实现的。再往下执行，调用内部类Itr的checkForComodification\(\)方法。
 
+![](/assets/foreach调用next方法.png)
+
+当ArrayList发现`modCount != expectedModCount时抛出`ConcurrentModificationException。
+
+![](/assets/Itr-checkForComodification.png)
 
