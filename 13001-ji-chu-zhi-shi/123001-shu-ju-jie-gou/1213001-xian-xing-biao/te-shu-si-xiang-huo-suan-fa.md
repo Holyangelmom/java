@@ -23,11 +23,21 @@ for (String userName : userNames) {
 System.out.println(userNames);
 ```
 
-![](/assets/foreach删除元素报错.png)**（2）fail-fast机制**
+![](/assets/foreach删除元素报错.png)**（2）什么是fail-fast机制？**
 
-fail-fast 机制是java集合\(Collection\)中的一种错误机制，JDK并不保证fail-fast机制一定会发生。当多个线程对同一个集合的内容进行操作时，就可能会产生fail-fast事件。
+fail-fast 机制是java集合\(Collection\)中的一种错误机制，JDK并不保证fail-fast机制一定会发生。有两种情况下会产生fail-fast事件：
 
-例如：当某一个线程A通过iterator去遍历某集合的过程中，若该集合的内容被其他线程所改变了；那么线程A访问集合时，就会抛出ConcurrentModificationException异常，产生fail-fast事件。
+* 当多个线程对同一个集合的内容进行操作时，就可能会通过抛出ConcurrentModificationException来产生fail-fast事件。
+* 即使不是多线程环境，如果单线程违反了规则，同样也有可能会抛出改异常。
+
+对于上述两种情况分别举例：
+
+* 当某一个线程A通过iterator去遍历某集合的过程中，若该集合的内容被其他线程所改变了；那么线程A访问集合时，就会抛出ConcurrentModificationException异常，产生fail-fast事件。
+* 当使用foreach遍历collection时，对collection进行删除/新增操作也会产生fail-fast事件。
+
+
+
+##### （3）fail-fast原理
 
 
 
