@@ -23,7 +23,7 @@ for (String userName : userNames) {
 System.out.println(userNames);
 ```
 
-![](/assets/foreach删除元素报错.png)**（2）fail-fast和fail-safe机制**
+![](/assets/foreach删除元素报错.png)**（2）fail-fast**
 
 
 
