@@ -8,5 +8,11 @@
 
 事实证明ArrayList使用for遍历速度最快，LinkedList使用foreach、iterator遍历速度最快。而LinkedList的foreach是用iterator实现的。
 
+##### 2、for和iterator的foreach实现方式
 
+对于collection，foreach内部语法是通过nested iteration来实现的；对于array，forreach是通过下标遍历来实现。下面是两张foreach实现对比图：
+
+![](/assets/foreach两种实现.png)
+
+实际上它们内部都是先将当前下标元素或下个元素转换为foreach指定的类型。
 
