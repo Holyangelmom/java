@@ -47,8 +47,10 @@ fail-fast 机制是java集合\(Collection\)中的一种错误机制，JDK并不�
 
 查看一下变量modCount和expectedModCount分别代表啥：
 
-* modCount是abstractList的成员变量，被ArrayList继承。它表示该集合实际被修改的次数。
+* modCount是AbstractList的成员变量，被ArrayList继承。它表示该集合实际被修改的次数。
 * expectedModCount 是 ArrayList中的一个内部类——Itr中的成员变量。expectedModCount表示这个迭代器期望该集合被修改的次数。其值是在ArrayList.iterator方法被调用的时候初始化的。只有通过迭代器对集合进行操作，该值才会改变。
+
+
 
 
 
