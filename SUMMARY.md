@@ -32,5 +32,5 @@
         * [为什么阿里禁止在 foreach 循环里进行元素的 remove/add 操作](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa/wei-shi-yaoa-li-jin-zhi-zai-foreach-xun-huan-li-jin-xing-yuan-su-de-remove-add-cao-zuo.md)
         * [ArrayList扩容机制](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa/arraylistkuo-rong-ji-zhi.md)
         * [ArrayList 中 elementData 为什么使用 transient 修饰？](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa/arraylist-zhong-elementdata-wei-shi-yao-shi-yong-transient-xiu-shi-ff1f.md)
-        * [ArrayList 底层实现就是数组，为何还要实现 RandomAccess ？](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa/arraylist-di-ceng-shi-xian-jiu-shi-shu-zu-ff0c-wei-he-huan-yao-shi-xian-randomaccess.md)
+        * [ArrayList 为何还要实现 RandomAccess ?](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa/arraylist-wei-he-huan-yao-shi-xian-randomaccess.md)
 
