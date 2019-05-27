@@ -8,9 +8,7 @@ transient Object[] elementData;
 
 ![](/assets/ArrayList序列化.png)
 
-定义为`其包含的元素的个数`，说明不是ArrayList动态扩容后的length。
+定义为`其包含的元素的个数`，说明不是ArrayList动态扩容后的length。综上所述，ArrayList只序列化实际存储元素的那部分。
 
 ![](/assets/ArrayList-size.png)
-
-
 
