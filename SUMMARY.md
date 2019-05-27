@@ -30,5 +30,6 @@
       * [1.2.1.2、for/foreach/iterator遍历效率对比](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/12133001-bian-li-xiao-lv-dui-bi.md)
       * [1.2.1.3、特殊点或算法](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa.md)
         * [为什么阿里禁止在 foreach 循环里进行元素的 remove/add 操作](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa/wei-shi-yaoa-li-jin-zhi-zai-foreach-xun-huan-li-jin-xing-yuan-su-de-remove-add-cao-zuo.md)
-        * ArrayList扩容机制
+        * [ArrayList扩容机制](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa/arraylistkuo-rong-ji-zhi.md)
+        * [ArrayList 中 elementData 为什么使用 transient 修饰？](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa/arraylist-zhong-elementdata-wei-shi-yao-shi-yong-transient-xiu-shi-ff1f.md)
 
