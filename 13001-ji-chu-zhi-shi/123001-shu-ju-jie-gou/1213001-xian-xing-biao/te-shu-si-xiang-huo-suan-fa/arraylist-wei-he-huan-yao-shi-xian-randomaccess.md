@@ -12,5 +12,7 @@
 
 ![](/assets/代码对比.png)
 
+在网上查了查，集合工具类Collections的binarySearch方法就用到list instanceof RandomAccess，若list已实现RandomAccess则使用二分法查找，源代码如下：
 
+![](/assets/Collections-binarySearch.png)
 
