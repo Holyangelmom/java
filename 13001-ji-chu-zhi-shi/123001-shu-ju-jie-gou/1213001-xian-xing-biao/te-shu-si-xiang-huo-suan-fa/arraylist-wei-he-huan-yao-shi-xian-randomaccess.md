@@ -8,7 +8,9 @@
 
 ![](/assets/RandomAccess定义.png)
 
-英文不太好就不翻译了，大概的意思就是实现了RandomAccess接口的list支持快速随机访问。如果是实现了这个接口的 List，也就是可以通过`list instanceof RandomAccess `，那么使用for循环的方式获取数据会优于用迭代器获取数据。
+英文不太好就不翻译了，大概的意思就是实现了RandomAccess接口的list支持快速随机访问。如果是实现了这个接口的 List，也就是可以通过`list instanceof RandomAccess`，那么使用for循环的方式获取数据会优于用迭代器获取数据，看看下边这两段代码就明白了
+
+![](/assets/代码对比.png)
 
 
 
