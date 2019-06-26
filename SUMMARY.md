@@ -38,4 +38,6 @@
     * 1.3.1、读锁
     * [1.3.2、可重入锁](13001-ji-chu-zhi-shi/133001-suo/1323001-ke-zhong-ru-suo.md)
     * 1.3.3、写锁
+* [2、设计模式](23001-she-ji-mo-shi.md)
+  * [2.1、单例模式](23001-she-ji-mo-shi/213001-dan-li-mo-shi.md)
 
