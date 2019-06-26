@@ -40,4 +40,5 @@
     * 1.3.3、写锁
 * [2、设计模式](23001-she-ji-mo-shi.md)
   * [2.1、单例模式](23001-she-ji-mo-shi/213001-dan-li-mo-shi.md)
+  * [2.2、工厂模式](23001-she-ji-mo-shi/223001-gong-chang-mo-shi.md)
 
