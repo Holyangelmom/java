@@ -34,7 +34,17 @@
 | 依赖倒转原则（DIP） | 要针对接口编程，不要针对实现编程 |
 | 迪米特原则（LoD） | 只和你的朋友通讯，避免和陌生人通信 |
 
-##### 
+##### 4、应用场景
+
+（1）、jdk中Calendar的getInstance方法
+
+（2）、JDBC中Connection对象的获取
+
+（3）、spring的IOC容器创建管理bean对象（工厂、单例模式）
+
+（4）、反射中Class对象的newInstance的使用
+
+
 
 
 
