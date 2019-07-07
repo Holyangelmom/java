@@ -43,4 +43,5 @@
   * [2.2、工厂模式](23001-she-ji-mo-shi/223001-gong-chang-mo-shi.md)
   * [2.3、建造模式](23001-she-ji-mo-shi/233001-jian-zao-mo-shi.md)
   * [2.4、原型模式](23001-she-ji-mo-shi/243001-yuan-xing-mo-shi.md)
+  * [2.5、适配器模式](23001-she-ji-mo-shi/253001-shi-pei-qi-mo-shi.md)
 
