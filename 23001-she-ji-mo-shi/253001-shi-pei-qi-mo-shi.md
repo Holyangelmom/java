@@ -13,5 +13,11 @@
 
 ![](/assets/适配器模式分类.png)
 
+3、应用场景
+
+* 旧系统的改造升级
+* InputStreamReader\(InputStream\)
+* OutputStreamWriter\(OutputStream\)
+
 
 
