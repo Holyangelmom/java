@@ -34,6 +34,7 @@
         * [ArrayList 中 elementData 为什么使用 transient 修饰？](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa/arraylist-zhong-elementdata-wei-shi-yao-shi-yong-transient-xiu-shi-ff1f.md)
         * [ArrayList 为何还要实现 RandomAccess ?](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1213001-xian-xing-biao/te-shu-si-xiang-huo-suan-fa/arraylist-wei-he-huan-yao-shi-xian-randomaccess.md)
     * [1.2.2、栈](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1223001-zhan.md)
+    * [1.2.2、队列](13001-ji-chu-zhi-shi/123001-shu-ju-jie-gou/1223001-dui-lie.md)
   * [1.3、锁](13001-ji-chu-zhi-shi/133001-suo.md)
     * 1.3.1、读锁
     * [1.3.2、可重入锁](13001-ji-chu-zhi-shi/133001-suo/1323001-ke-zhong-ru-suo.md)
