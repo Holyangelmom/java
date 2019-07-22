@@ -21,5 +21,12 @@
 * Decorator：装饰角色
 * ConcreteComponent：具体装饰角色（喷漆车间）
 
+##### 4、使用场景
+
+* IO输入输出流设计
+* servlet中request对象的各种包装设计
+
+
+
 
 
