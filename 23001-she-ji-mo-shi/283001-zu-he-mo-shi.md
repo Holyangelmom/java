@@ -10,5 +10,20 @@
 
 ##### 3、UML图
 
-![](/assets/组合模式UML图.png)
+##### ![](/assets/组合模式UML图.png)组合模式包含如下角色：
+
+* Component ：抽象构件角色（相当于电脑）
+* Leaf：叶子构件角色（相当于台式机、笔记本、平板）
+* Composite：树枝或容器角色（相当于品牌）
+* ConcreteImplementor：具体实现类（相当于联想、神舟、戴尔）
+
+##### 4、使用场景
+
+资源管理器
+
+XML文件解析
+
+组织架构处理
+
+JUnit框架：TestCase（叶子）、TestUnit（容器）
 
