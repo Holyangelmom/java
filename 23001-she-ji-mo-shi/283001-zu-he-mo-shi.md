@@ -16,15 +16,10 @@
 * Leaf：叶子构件角色（相当于叶子）
 * Composite：树枝或容器角色（相当于非叶子节点）
 
-
-
 ##### 4、使用场景
 
-资源管理器
-
-XML文件解析
-
-组织架构处理
-
-JUnit框架：TestCase（叶子）、TestUnit（容器）
+* 资源管理器
+* XML文件解析
+* 组织架构处理
+* JUnit框架：TestCase（叶子）、TestUnit（容器）
 
