@@ -46,4 +46,5 @@
   * [2.4、原型模式](23001-she-ji-mo-shi/243001-yuan-xing-mo-shi.md)
   * [2.5、适配器模式](23001-she-ji-mo-shi/253001-shi-pei-qi-mo-shi.md)
   * [2.6、代理模式](23001-she-ji-mo-shi/263001-dai-li-mo-shi.md)
+  * [2.7、桥接模式](23001-she-ji-mo-shi/273001-qiao-jie-mo-shi.md)
 
