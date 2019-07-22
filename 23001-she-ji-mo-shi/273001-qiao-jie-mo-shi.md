@@ -28,16 +28,10 @@
 
 桥接模式包含如下角色：
 
-* Abstraction：抽象类
-* RefinedAbstraction：扩充抽象类
-* Implementor：实现类接口
-* ConcreteImplementor：具体实现类
-
-
-
-
-
-
+* Abstraction：抽象类（相当于电脑）
+* RefinedAbstraction：扩充抽象类（相当于台式机、笔记本、平板）
+* Implementor：实现类接口（相当于品牌）
+* ConcreteImplementor：具体实现类（相当于联想、神舟、戴尔）
 
 
 
