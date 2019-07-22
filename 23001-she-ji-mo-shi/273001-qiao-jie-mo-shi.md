@@ -33,5 +33,12 @@
 * Implementor：实现类接口（相当于品牌）
 * ConcreteImplementor：具体实现类（相当于联想、神舟、戴尔）
 
+##### 4、应用场景
+
+* JDBC驱动
+* AWT的peer架构
+
+![](/assets/JDBC桥接模式.png)
+
 
 
