@@ -48,4 +48,5 @@
   * [2.6、代理模式](23001-she-ji-mo-shi/263001-dai-li-mo-shi.md)
   * [2.7、桥接模式](23001-she-ji-mo-shi/273001-qiao-jie-mo-shi.md)
   * [2.8、组合模式](23001-she-ji-mo-shi/283001-zu-he-mo-shi.md)
+  * [2.9、装饰模式](23001-she-ji-mo-shi/293001-zhuang-shi-mo-shi.md)
 
